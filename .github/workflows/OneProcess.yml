@@ -24,13 +24,13 @@ jobs:
       run: pip install -r requirements.txt
 
       
-    - name: Run script to update Files
-      run: python step01.py
-      env:
-          DB_HOST: ${{ secrets.DB_HOST }}
-          DB_USERNAME: ${{ secrets.DB_USERNAME }}
-          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-          DB_NAME: ${{ secrets.DB_NAME }}
+    # - name: Run script to update Files
+    #   run: python step01.py
+    #   env:
+    #       DB_HOST: ${{ secrets.DB_HOST }}
+    #       DB_USERNAME: ${{ secrets.DB_USERNAME }}
+    #       DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+    #       DB_NAME: ${{ secrets.DB_NAME }}
 
     # - name: Commit changes
     #   run: |
